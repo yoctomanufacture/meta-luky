@@ -1,13 +1,24 @@
 #!/bin/bash
 
 git clone git://git.yoctoproject.org/poky
-cd poky; git checkout 9fd145d27ec479668fac490a9f1078089f22bf59; cd -
+cd poky; 
+git checkout 9fd145d27ec479668fac490a9f1078089f22bf59; 
+cd -;
+
 git clone git://git.openembedded.org/meta-openembedded
-cd meta-openembedded; git checkout 5b6f39ce325d490fc382d5d59c5b8b9d5fa38b38; cd -
+cd meta-openembedded; 
+git checkout 5b6f39ce325d490fc382d5d59c5b8b9d5fa38b38; 
+cd -;
+
 git clone git://git.yoctoproject.org/meta-ivi
-cd meta-ivi; git checkout 8.0.1; cd -
+cd meta-ivi; 
+git checkout 8.0.1; 
+cd -;
+
 git clone git://git.yoctoproject.org/meta-raspberrypi
-cd meta-raspberrypi; cd -
+cd meta-raspberrypi; 
+git checkout 1350ba8acf4b5bb03b26a00da91a6698d4b7e2da;
+cd -
 
 cd ./meta-ivi/meta-ivi/conf
 TEMPLATECONF=`pwd`;

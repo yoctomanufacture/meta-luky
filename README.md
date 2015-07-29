@@ -10,15 +10,22 @@ Dependencies
 This layer depends on:
 
   URI: git://git.yoctoproject.org/poky
+
   git checkout 9fd145d27ec479668fac490a9f1078089f22bf59;
 
-  URI: git://git.openembedded.org/meta-openembedded 
+
+  URI: git://git.openembedded.org/meta-openembedded
+ 
   git checkout 5b6f39ce325d490fc382d5d59c5b8b9d5fa38b38;
 
+
   URI: git://git.yoctoproject.org/meta-ivi
+
   git checkout 8.0.1;
 
+
   URI: git://git.yoctoproject.org/meta-raspberrypi
+
 
 Patches
 =======
@@ -48,14 +55,23 @@ location of the luky layer to bblayers.conf, along with any
 other layers needed. e.g.:
 
 BBLAYERS ?= " \
+
   TOBEREPLACED/poky/meta \
+
   TOBEREPLACED/poky/meta-yocto \
+
   TOBEREPLACED/poky/meta-yocto-bsp \
+
   TOBEREPLACED/poky/../meta-openembedded/meta-oe \
+
   TOBEREPLACED/poky/../meta-ivi/meta-ivi \
+
   TOBEREPLACED/poky/../meta-ivi/meta-ivi-bsp \
+
   TOBEREPLACED/poky/../meta-raspberrypi \
+
   TOBEREPLACED/poky/../meta-luky \
+
   "
 
 II. Misc - IMPORTANT
